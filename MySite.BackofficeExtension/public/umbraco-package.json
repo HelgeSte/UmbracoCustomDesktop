@@ -1,5 +1,5 @@
 {
-    "$schema": "..\\CustomDesktopProject\\umbraco-package-schema.json",
+    "$schema": "..\\..\\CustomDesktopProject\\umbraco-package-schema.json",
     "name": "MySite",
     "id": "MySite",
     "version": "1.0.0",

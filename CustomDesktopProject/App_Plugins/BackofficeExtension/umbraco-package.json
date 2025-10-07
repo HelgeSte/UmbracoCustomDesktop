@@ -1,0 +1,18 @@
+{
+    "$schema": "..\\..\\CustomDesktopProject\\umbraco-package-schema.json",
+    "name": "MySite",
+    "id": "MySite",
+    "version": "1.0.0",
+    "allowTelemetry": true,
+    "extensions": [
+        {
+            "type": "dashboard",
+            "alias": "My.Dashboard.MyExtension",
+            "name": "My Dashboard",
+            "meta": {
+                "label": "My Dashboard",
+                "pathname": "my-dashboard"
+            }
+        }
+    ]
+}
