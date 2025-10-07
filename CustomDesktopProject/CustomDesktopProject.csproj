@@ -15,6 +15,45 @@
     <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="72.1.0.3" Condition="$(RuntimeIdentifier.StartsWith('linux')) or $(RuntimeIdentifier.StartsWith('win')) or ('$(RuntimeIdentifier)' == '' and !$([MSBuild]::IsOSPlatform('osx')))" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="App_Plugins\BackofficeExtension\mysite-backofficeextension.js" />
+    <Content Include="App_Plugins\BackofficeExtension\mysite-backofficeextension.js.map" />
+    <Content Include="App_Plugins\BackofficeExtension\vite.svg" />
+    <Content Include="umbraco\Data\TEMP\DistCache\5e426bc966ffd3874d5e6af13dc3ce85b9295953-lastsynced.txt" />
+    <Content Include="umbraco\Data\TEMP\DistCache\80f461d20f1f981d084fc81ff21d7f9c0bcff9df-lastsynced.txt" />
+    <Content Include="umbraco\Data\TEMP\DistCache\dac7dddc12371a77bc88b478c6a59b1423a5a10a-lastsynced.txt" />
+    <Content Include="umbraco\Data\TEMP\ExamineIndexes\DeliveryApiContentIndex\segments.gen" />
+    <Content Include="umbraco\Data\TEMP\ExamineIndexes\DeliveryApiContentIndex\segments_4" />
+    <Content Include="umbraco\Data\TEMP\ExamineIndexes\DeliveryApiContentIndex\write.lock" />
+    <Content Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\segments.gen" />
+    <Content Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\segments_4" />
+    <Content Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\write.lock" />
+    <Content Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\segments.gen" />
+    <Content Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\segments_4" />
+    <Content Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\write.lock" />
+    <Content Include="umbraco\Data\TEMP\ExamineIndexes\MembersIndex\segments.gen" />
+    <Content Include="umbraco\Data\TEMP\ExamineIndexes\MembersIndex\segments_4" />
+    <Content Include="umbraco\Data\TEMP\ExamineIndexes\MembersIndex\write.lock" />
+    <Content Include="umbraco\Data\TEMP\MainDom_0b8a699f8221d0c95cd901ebb420ff7f5fec9f60.lock" />
+    <Content Include="umbraco\Data\TEMP\MainDom_6db16469b613a8f1a98349cd4714c66fac9adfdb.lock" />
+    <Content Include="umbraco\Data\TEMP\MainDom_6f48b1bad766e3ab6423f5870d070f6b541cecb5.lock" />
+    <Content Include="umbraco\Data\TEMP\NuCache\NuCache.Content.db" />
+    <Content Include="umbraco\Data\TEMP\NuCache\NuCache.Content.tlog" />
+    <Content Include="umbraco\Data\TEMP\NuCache\NuCache.Media.db" />
+    <Content Include="umbraco\Data\TEMP\NuCache\NuCache.Media.tlog" />
+    <Content Include="umbraco\Data\Umbraco.sqlite.db" />
+    <Content Include="umbraco\Data\Umbraco.sqlite.db-shm" />
+    <Content Include="umbraco\Data\Umbraco.sqlite.db-wal" />
+    <Content Include="umbraco\Logs\UmbracoTraceLog.SOR-PC-056.20251006.json" />
+    <Content Include="umbraco\Logs\UmbracoTraceLog.SOR-PC-056.20251007.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="umbraco\Data\TEMP\FileUploads\" />
+    <Folder Include="umbraco\Data\TEMP\InMemoryAuto\" />
+    <Folder Include="umbraco\Data\TEMP\TemporaryFile\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <!-- Razor files are needed for the backoffice to work correctly -->
     <CopyRazorGenerateFilesToPublishDirectory>true</CopyRazorGenerateFilesToPublishDirectory>
