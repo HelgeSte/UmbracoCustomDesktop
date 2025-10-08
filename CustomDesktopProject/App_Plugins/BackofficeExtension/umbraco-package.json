@@ -6,13 +6,10 @@
     "allowTelemetry": true,
     "extensions": [
         {
-            "type": "dashboard",
-            "alias": "My.Dashboard.MyExtension",
-            "name": "My Dashboard",
-            "meta": {
-                "label": "My Dashboard",
-                "pathname": "my-dashboard"
-            }
+            "name": "MySite.entrypoint",
+            "alias": "MySite.EntryPoint",
+            "type": "entryPoint",
+            "js": "/app_plugins/BackofficeExtension/mysite-backofficeextension.js"
         }
     ]
 }
