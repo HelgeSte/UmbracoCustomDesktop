@@ -1,7 +1,6 @@
-import type { ManifestDashboard } from "@umbraco-cms/backoffice/extension-registry";
-// import type { ManifestDashboard } from "@umbraco-cms/backoffice/extension-registry";
+import { ManifestDashboard } from "@umbraco-cms/backoffice/extension-registry";
 
-export const DASHBOARD_ALIAS ='MySite.Dashboard';
+export const DASHBOARD_ALIAS = 'MySite.Dashboard';
 
 export const DashboardManifest: ManifestDashboard = {
     type: 'dashboard',
